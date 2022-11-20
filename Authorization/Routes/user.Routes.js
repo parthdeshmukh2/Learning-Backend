@@ -38,7 +38,7 @@ UserController.post("/login", async (req, res) => {
        if(result){
             
         const token = jwt.sign({ email: userLogin.email , userId:userLogin._id, }, 'shhhhh');
-        return res.send({messege:"Shradha jhad gai", userLogin, token});
+        return res.send({messege:"Login Successfull", userLogin, token});
 
         }
         
